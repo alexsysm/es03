@@ -1,0 +1,20 @@
+# cluster setting
+cluster.name: "hb-es-cluster"
+cluster.initial_master_nodes: ["10.10.125.231", "10.10.125.232", "10.10.125.233"]
+
+# node name
+node.name: "hb-es-node3"
+
+# host network setting
+network.host: 10.10.125.233
+
+# node attribute setting
+node.master: true
+node.data: true
+
+# detail the private IPs of your nodes:
+#discovery.zen.ping.unicast.hosts: ["10.10.125.231", "10.10.125.232", "10.10.125.233"]
+discovery.seed_hosts: ["10.10.125.231", "10.10.125.232", "10.10.125.233"]
+
+# lock memory heap
+bootstrap.memory_lock: true

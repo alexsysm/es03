@@ -1,0 +1,291 @@
+# Blank lines and lines starting with pound are comments.
+
+# Explicit mappings match any token sequence on the LHS of "=>"
+# and replace with all alternatives on the RHS.  These types of mappings
+# ignore the expand parameter in the schema.
+
+# Examples:
+# i-pod, i pod => ipod,
+# sea biscuit, sea biscit => seabiscuit
+
+# Equivalent synonyms may be separated with commas and give
+# no explicit mapping.  In this case the mapping behavior will
+# be taken from the expand parameter in the schema.  This allows
+# the same synonym file to be used in different synonym handling strategies.
+# Examples:
+# ipod, i-pod, i pod
+# foozball , foosball
+# universe , cosmos
+# lol, laughing out loud
+
+# If expand==true, "ipod, i-pod, i pod" is equivalent
+# to the explicit mapping:
+# ipod, i-pod, i pod => ipod, i-pod, i pod
+# If expand==false, "ipod, i-pod, i pod" is equivalent
+# to the explicit mapping:
+# ipod, i-pod, i pod => ipod
+
+# Multiple synonym mapping entries are merged.
+# foo => foo bar
+# foo => baz
+# is equivalent to
+# foo => foo bar, baz
+
+가방 => 클러치백, 퀼팅백, 토트백, 백팩, 크로스백, 숄더백
+화장품 => 토너, 로션, 크림, 스킨, 이멀젼, 에센스
+i pid, ipad, i-pad, 아이패드 => i pid, ipad, i-pad, 아이패드
+고들빼기, 고들배기
+귀걸이, 귀고리, 귀거리
+귀지개, 귀이개
+숟가락, 숫가락
+깍두기, 깍두기
+냄비, 남비	
+널빤지, 널판지
+자장면, 짜장면
+떡볶이, 떡복이, 떡복기
+뚝배기, 뚝빼기
+먹장어, 꼼장어, 곰장어
+목제가구, 목재가구
+장아찌, 장아치, 짱아치
+장조림, 장졸임
+재떨이, 재털이
+젓갈, 젓깔	
+찌개, 찌게	
+철제가구, 철재가구
+총각무, 알타리무
+칫솔, 치솔	
+베개, 베게, 벼개
+붕장어, 아나고
+상추, 상치	
+서랍, 설합	
+햅쌀, 햇쌀	
+돌하르방, 돌하루방
+galaxy, 갤럭시, 겔럭시
+guess, 게스
+kenzo, 겐조
+guerlain, 겔랑
+golden, 골든
+goose, 구스
+gucci, 구찌
+glasslock, 글라스락
+cartier, 까르띠에
+casamia, 까사미아
+caudalie, 꼬달리
+compagna, 꼼빠니아	
+chloe, 끌로에, 클로이
+nike, 나이키
+national, 내셔널
+geographic, 지오그래픽
+nespresso, 네스프레소
+nepa, 네파
+north, 노스
+face, 페이스
+notebook, 노트북
+nuovo, 누오보
+new, 뉴
+balance, 밸런스, 발란스
+nutrione, 뉴트리원	
+nii, 니
+nix, 닉스
+dyson, 다이슨
+dr.jart, dr, jart, 닥터자르트	
+dalba, 달바	
+wmf, 더블유엠에프	
+dashing, 데싱
+diva, 디바
+dolce, 돌체
+gabbana, 가바나	
+duoback, 듀오백	
+dvd, 디브이디	
+discovery, 디스커버리	
+dior, 디올	
+dpc, 디피씨	
+touslesjours, 뚜레쥬르
+lacoste, 라코스테	
+lock 락
+lacto-fit, 락토핏
+lancome, 랑콤	
+landrover, 랜드로바
+lovecat, 러브캣
+lush, 러쉬
+lego, 레고
+roem, 로엠
+loccitane, 록시땅
+louis, 루이, 루이스
+quatorze, 까또즈
+vuitton, 비통	, 뷔통
+lecaf, 르까프
+lecoq, 르꼬끄
+sportif, 스포르티브
+shop, 샵
+levis, 리바이스
+reebok, 리복
+marc, 마크
+jacobs, 제이콥스
+mac, 맥	
+makeup, 메이크업
+forever, 포에버
+metrocity, 메트로시티
+montbell, 몽벨
+montblanc, 몽블랑
+moncler, 몽클레어
+millet, 밀레
+banilaco, 바닐라코
+bobbi, 바비
+brown, 브라운
+vauzen, 바우젠
+balenciaga, 발렌시아가
+valentino, 발렌티노
+bangbang, 뱅뱅
+burberry, 버버리
+buckaroo, 버커루
+bucket, 버킷
+bag, 백
+bunetton, 베네통
+verawang, 베라왕
+bif, 보루네오
+bose, 보스
+bottega, 보테가
+veneta, 베네타
+bulgari, 불가리
+v넥, 브이넥
+black, 블랙
+yak, 야크
+blue, 블루
+rabbit, 래빗
+bluetooth, 블루투스
+bbq, 비비큐, 바베큐
+bcgc, 비씨비지	
+bnx, 비엔엑스
+beanpole, 빈폴
+o2, 산소, 오투
+chanel, 샤넬
+shuuemura, 슈에무라
+swarovski, 스와로브스키
+skechers, 스케쳐스
+starbucks, 스타벅스, 스벅
+shiseido, 시세이도
+samsonite, 쌤소나이트, 샘소나이트
+thursday, 써스데이
+island, 아일랜드
+cc, 씨씨
+cj, 씨제이
+adidas, 아디다스
+eider, 아이더
+iope, 아이오페
+air, 에어
+rc, 알씨
+anneklein, 앤클라인
+yamaha, 야마하
+underwear, 언더웨어
+egoist, 에고이스트
+estee, 에스티
+laouder, 로더
+as, 에이에스
+ahc, 에이에이치씨
+age, 에이지
+hp, 에이치피
+frj, 에프알제이
+nba, 엔비에이
+lbl, 엘비엘
+la, 엘에이
+lg, 엘지
+mcm, 엠씨엠
+mlb, 엠엘비
+yes, 예스
+yesse, 예쎄
+organic, 오가닉
+mom, 맘
+ohui, 오휘
+olive, 올리브
+wide, 와이드
+angle, 앵글
+ybm, 와이비엠
+waffle, 와플
+wonderbra, 원더브라
+welkeeps, 웰킵스
+winix, 위닉스
+une, 윈
+u넥, 유넥
+unisex, 유니섹스
+usb, 유에스비
+innisfree, 이니스프리
+ebs, 이베에스
+exr, 이엑스알
+enc, 이엔씨
+ysl, 입생로랑, 생로랑
+zanellato, 자넬라토
+zanotti, 자노티
+zaspero, 자스페로
+jambangee, 잠뱅이
+jacknjill, 잭앤질
+jackfield, 잭필드
+jestina, 제이에스티나
+jmw, 제이엠더블유
+jomalone, 조말론
+joinus, 조이너스
+juvis, 쥬비스
+giuseppe, 쥬세페
+zanotti, 자노티
+jigott, 지고트
+studio, 스튜디오
+giordano, 지오다노
+ziozia, 지오지아
+ggpx, 지지피엑스
+jeep, 지프
+kanu, 카누
+aakmann, 아크만
+kakao, 카카오
+kappa, 카파
+lagerfeld, 라거펠트
+canon, 캐논
+ck, 캘빈클라인
+cambridge, 캠브리지
+customellow, 커스텀멜로우
+coffee, 커피
+converse, 컨버스
+pc, 컴퓨터
+k-swiss, kswiss, 케이스위스, k스위스
+k2, 케이투
+corelle, 코렐
+kolon, 코오롱
+coach, 코치
+cuckoo, 쿠쿠
+crocs, 크록스
+kleenex, 크리넥스
+clinique, 크리니크
+clio, 클리오
+kiehl, 키엘
+kipling, 키플링
+tommy, 타미
+topten, 탑텐
+tandy, 탠디
+tankus, 탱커스
+tefal, 테팔
+10x10, 텐바이텐
+toryburch, 토리버치
+tomboy, 톰보이
+thombrowne, 톰브라운
+tomford, 톰포드
+twosome, 투썸
+tv, 티비
+tbj, 티비제이
+tiffany, 티파니, 티파니앤코
+ferragamo, 페라가모
+fendi, 펜디
+polham, 폴햄
+puma, 푸마
+prada, 프라다
+plastic, 플라스틱
+ps4, 플스4	
+pvc, 피브이씨
+pga, 피지에이
+physiogel, 피지오겔
+philips, 필립스
+huxley, 헉슬리
+hummel, 험멜
+hera, 헤라
+hazzys, 헤지스, 해지스
+hotel, 호텔
+fissler, 휘슬러
+fila, 휠라, 필라
