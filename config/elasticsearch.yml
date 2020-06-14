@@ -1,6 +1,6 @@
 # cluster setting
 cluster.name: "hb-es-cluster"
-cluster.initial_master_nodes: ["10.10.125.231", "10.10.125.232", "10.10.125.233"]
+cluster.initial_master_nodes: ["hb-es-node1", "hb-es-node2", "hb-es-node3"]
 
 # node name
 node.name: "hb-es-node3"
@@ -12,9 +12,20 @@ network.host: 10.10.125.233
 node.master: true
 node.data: true
 
+# path
+path.data: /app/docker/es01/data
+path.logs: /app/docker/es01/logs
+
 # detail the private IPs of your nodes:
 #discovery.zen.ping.unicast.hosts: ["10.10.125.231", "10.10.125.232", "10.10.125.233"]
 discovery.seed_hosts: ["10.10.125.231", "10.10.125.232", "10.10.125.233"]
 
 # lock memory heap
 bootstrap.memory_lock: true
+
+# xpack setting
+xpack.security.enabled: true
+xpack.security.transport.ssl.enabled: true
+xpack.security.transport.ssl.verification_mode: certificate
+xpack.security.transport.ssl.keystore.path: elastic-certificates.p12
+xpack.security.transport.ssl.truststore.path: elastic-certificates.p12
