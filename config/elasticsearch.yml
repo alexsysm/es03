@@ -13,8 +13,8 @@ node.master: true
 node.data: true
 
 # path
-path.data: /app/docker/es01/data
-path.logs: /app/docker/es01/logs
+path.data: /app/docker/es03/data
+path.logs: /app/docker/es03/logs
 
 # detail the private IPs of your nodes:
 #discovery.zen.ping.unicast.hosts: ["10.10.125.231", "10.10.125.232", "10.10.125.233"]
