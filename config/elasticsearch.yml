@@ -7,6 +7,10 @@ node.name: "hb-es-node3"
 
 # host network setting
 network.host: 10.10.125.233
+network.publish_host: 10.10.125.233
+http.port: 9200
+transport.tcp.port: 9300
+transport.publish_port: 9300
 
 # node attribute setting
 node.master: true
@@ -14,7 +18,7 @@ node.data: true
 
 # detail the private IPs of your nodes:
 #discovery.zen.ping.unicast.hosts: ["10.10.125.231", "10.10.125.232", "10.10.125.233"]
-discovery.seed_hosts: ["10.10.125.231", "10.10.125.232", "10.10.125.233"]
+discovery.seed_hosts: ["10.10.125.231:9300", "10.10.125.232:9300", "10.10.125.233:9300"]
 
 # lock memory heap
 bootstrap.memory_lock: true
